@@ -39,16 +39,6 @@ li{
   border: none;
   background: rgb(240, 187, 204);
 }
-.background{
-  background-image: url(images/1-removebg-preview.png);
-  background-color: #fff;
-  background-size: cover;
-  background-position: 100vh;
-  background-position: 100vw;
-  background-repeat: no-repeat;
-  height: 90vh;
-
-}
 .outfit{
   text-align: center;
   margin-top: 10%;
@@ -180,5 +170,59 @@ footer {
 }
   
 
+/* Styles for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+  }
+  li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+  #p{
+margin-top: 20%;
+color: black;
+  }
+  
+  #img1 {
+    display: none;
+  }
+  .images{
+    padding: 4%;
+  }
+  .pic1{
+    display: none;
+  }
+  .pic2{
+  display: none;
+  }
+  .pic3{
+    display: none;
+  }
+  .btn1, .btn2 {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-row {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .about-shop-icons {
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .footer-row li, .about-shop-icons i {
+    font-size: 14px;
+  }
+}
 
   
